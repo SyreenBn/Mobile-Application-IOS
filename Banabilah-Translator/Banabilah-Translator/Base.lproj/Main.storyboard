@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Banabilah_Translator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="English To Spanish Translator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GSq-iL-2MW">
+                                <rect key="frame" x="75" y="55" width="225" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="225" id="JD0-xW-Fc2"/>
+                                    <constraint firstAttribute="height" constant="28" id="g3g-ac-QJO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tia-1a-SoO">
+                                <rect key="frame" x="26.5" y="180" width="322" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="322" id="WcO-La-gZ3"/>
+                                    <constraint firstAttribute="height" constant="46" id="l6P-qj-9bZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EdL-Xq-aG2">
+                                <rect key="frame" x="156" y="246" width="63" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="MZZ-Z7-1ru"/>
+                                    <constraint firstAttribute="width" constant="63" id="ewE-cu-xEI"/>
+                                </constraints>
+                                <state key="normal" title="Translate">
+                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="Translator:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jw3-cZ-ngL"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter English Word" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Poo-mB-0dh">
+                                <rect key="frame" x="124" y="121" width="127" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="127" id="hgx-LF-Ua4"/>
+                                    <constraint firstAttribute="height" constant="30" id="nLL-9i-g2s"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.81650122140210346" green="0.93050294213118667" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="tia-1a-SoO" firstAttribute="centerX" secondItem="GSq-iL-2MW" secondAttribute="centerX" id="0Ub-ed-Szd"/>
+                            <constraint firstItem="tia-1a-SoO" firstAttribute="top" secondItem="Poo-mB-0dh" secondAttribute="bottom" constant="29" id="Mgf-xY-YLN"/>
+                            <constraint firstItem="Poo-mB-0dh" firstAttribute="top" secondItem="GSq-iL-2MW" secondAttribute="bottom" constant="38" id="OMk-7s-vdf"/>
+                            <constraint firstItem="EdL-Xq-aG2" firstAttribute="centerX" secondItem="GSq-iL-2MW" secondAttribute="centerX" id="TGK-0Y-wnP"/>
+                            <constraint firstItem="Poo-mB-0dh" firstAttribute="centerX" secondItem="GSq-iL-2MW" secondAttribute="centerX" id="Zta-CL-ilb"/>
+                            <constraint firstItem="GSq-iL-2MW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="bcD-nN-beR"/>
+                            <constraint firstItem="GSq-iL-2MW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rk0-xm-ScJ"/>
+                            <constraint firstItem="EdL-Xq-aG2" firstAttribute="top" secondItem="tia-1a-SoO" secondAttribute="bottom" constant="20" id="vWy-LC-uwp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="EnglishWord" destination="Poo-mB-0dh" id="7dl-dZ-tL3"/>
+                        <outlet property="translatedWord" destination="tia-1a-SoO" id="WZX-o9-xMl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-84" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
