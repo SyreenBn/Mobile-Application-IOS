@@ -1,0 +1,202 @@
+import UIKit
+
+
+
+//Syreen Banabilah
+
+
+
+//Step 1
+
+print("\nStep #1 \n")
+
+var chapter : Int = 2
+
+print ("You are reading Chapter \(chapter).")
+
+
+
+//Step 2
+
+print("\nStep #2 \n")
+
+let StudentID = 23
+
+var score :Int = 85
+
+print("Student number \(StudentID) received a score of \(score)")
+
+
+
+//Step 3
+
+print("\nStep #3 \n")
+
+var quiz1 : Double = 30.5
+
+var quiz2 : Double = 23.7
+
+var quiz3 : Double = 68.9
+
+var sum : Double = 0
+
+var average : Double = 0
+
+sum = quiz1 + quiz2 + quiz3
+
+average = sum / 3
+
+print(String(format:"The sum of the quizzes is %.2f and the average quiz score is %.2f", sum, average))
+
+
+
+//Step 4
+
+print("\nStep #4 \n")
+
+var payRate : Double = 18.00
+
+var hoursWorked : Double = 160.00
+
+var salary: Double = 18.00*160
+
+var incomeTax : Double = (salary*7)/100
+
+var socialSecurityTax : Double = (salary*10)/100
+
+var netPay : Double = salary - (incomeTax + socialSecurityTax)
+
+print(String(format:"The net pay is %.2f", netPay))
+
+
+
+//Step 5
+
+print("\nStep #5 \n")
+
+var firstName : String = "Syreen"
+
+var lastName : String = " Banabilah"
+
+print("My name is " + firstName + lastName)
+
+
+
+//Step 6
+
+print("\nStep #6 \n")
+
+var grade : Int = 97
+
+if grade >= 80 && grade <= 100{
+
+    print ("You did WELL :)")
+
+} else if grade >= 70 && grade <= 79 {
+
+    print ("You did OK :|")
+
+} else if grade < 70 {
+
+    print ("Your did POORLY :(")
+
+} else {
+
+    print ("Invalid score >_<")
+
+}
+
+
+
+//Step 7
+
+print("\nStep #7 \n")
+
+switch grade {
+
+case 90 ... 100:
+
+    print("A")
+
+case 80 ... 89:
+
+    print("B")
+
+case 70 ... 79:
+
+    print("C")
+
+case 69 ... 60:
+
+    print("D")
+
+case 59 ... 0:
+
+    print("F")
+
+default:
+
+    print ("Invalid Score")
+
+}
+
+
+
+//Step 8
+
+print("\nStep #8 \n")
+
+var isItTime : Bool = true
+
+if isItTime {
+
+    print("Wake Up!")
+
+} else {
+
+    print("Go Back to Sleep")
+
+}
+
+
+
+//Step 9
+
+print("\nStep #9 \n")
+
+let const1 : String = "Hello "
+
+let const2 : String = " Jamie"
+
+let const3 : String = " <3 "
+
+var newString = const1 + const2 + const3
+
+let char1 : Character =  "B"
+
+newString.append(char1)
+
+print (newString)
+
+
+
+//Step 10
+
+print("\nStep #10\n")
+
+let oneGBtoMB : Int = 1000
+
+let iphoneStorageInMB : Int = 8 * oneGBtoMB
+
+var usedStorageInMB : Int = 3 * oneGBtoMB
+
+var leftStorageInGB : Int = iphoneStorageInMB - usedStorageInMB
+
+let videoSizeInMB = 150
+
+let min : Int = leftStorageInGB / videoSizeInMB
+
+print("You can save \(min) more minutes of video on this iPhone")
+
+
+
