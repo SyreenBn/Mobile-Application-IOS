@@ -42,11 +42,13 @@ class DataManager{
         userDefaults.setValue(species, forKey: "species")
         
     }
+    
     func addRace(species inSpecies: String, race: String){
         if var races = species[inSpecies]{
             races.append(race)
             species[inSpecies] = races
         }
+        saveData()
     }
     
     func removeRace(species inSpecies: String, race inRace: String){
